@@ -1,0 +1,93 @@
+body {
+  background-size: 200%;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: linear-gradient(45deg, #211a2b, #683088, #452474, #4b0fa0, #452474, #683088, #211a2b);
+
+  /* animation */
+  background-size: 500%;
+  animation: colors 30s ease infinite;
+}
+
+.loginArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background-color: #191420;
+  padding: 15px;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login input {
+  color: rgb(204, 204, 204);
+  margin: 10px;
+  background-color: #2d213f;
+  border: none;
+  height: 45px;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+}
+
+form [type='submit'] {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(204, 204, 204);
+  background-color: #8d65ca;
+  cursor: pointer;
+}
+
+form [type='submit']:hover {
+  background-color: #6c4e99;
+  transition: 0.15s;
+}
+
+p {
+  color: rgb(204, 204, 204);
+}
+
+a {
+  color: #8d65ca;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50% ;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
